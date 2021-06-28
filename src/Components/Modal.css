@@ -1,0 +1,76 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: .4s;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal_result {
+    padding: 10px;
+    width: 1100px;
+    height: 600px;
+    background-color: #f0f0f0;
+    border:rgb(51, 51, 51) solid 1px; 
+    box-shadow: rgba(51, 51, 51, 0.137) 4px 4px;
+    transform: scale(.5);
+    transition: .4s;
+}
+
+.modal_result.active {
+    transform: scale(1);
+}
+
+.book_info {
+    width: 100%;
+    height: 100%;
+}
+
+#currentBook_cover {
+    width: 40%;
+    height: 100%;
+}
+
+#currentBook_title {
+    position: absolute;
+    left: 40%;
+    margin-left: 10px;
+    top: 10%;
+    font-size: 30px;
+}
+
+#currentBook_author, #currentBook_publishDate, #currentBook_publisher, #currentBook_isbn{
+    position: absolute;
+    margin-left: 10px;
+    left: 40%;
+    font-size: 25px;
+}
+
+#currentBook_author {
+    bottom: 40%;
+}
+
+#currentBook_publishDate {
+    bottom: 30%;
+}
+
+#currentBook_publisher {
+    width: 65%;
+    bottom: 20%;
+}
+
+#currentBook_isbn {
+    bottom: 10%;
+}
